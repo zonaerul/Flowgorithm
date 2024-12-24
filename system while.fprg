@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="system while"/>
+        <attribute name="authors" value="labti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-24 12:18:52 PM"/>
+        <attribute name="created" value="bGFidGk7REVTS1RPUC1SQVBQTjE3OzIwMjQtMTItMjQ7MTI6MTQ6NDEgUE07Mjg3MA=="/>
+        <attribute name="edited" value="bGFidGk7REVTS1RPUC1SQVBQTjE3OzIwMjQtMTItMjQ7MTI6MTg6NTIgUE07MTsyOTg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="0"/>
+            <while expression="x &lt;= 10">
+                <output expression="x" newline="True"/>
+                <assign variable="x" expression="x + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

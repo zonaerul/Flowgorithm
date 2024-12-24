@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="seleksi system presiden bem"/>
+        <attribute name="authors" value="labti"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-12-24 11:54:00 AM"/>
+        <attribute name="created" value="bGFidGk7REVTS1RPUC1SQVBQTjE3OzIwMjQtMTItMjQ7MTE6MDg6MjYgQU07Mjg2MA=="/>
+        <attribute name="edited" value="bGFidGk7REVTS1RPUC1SQVBQTjE3OzIwMjQtMTItMjQ7MTE6NTQ6MDAgQU07MTsyOTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ipk" type="Real" array="False" size=""/>
+            <declare name="ukm" type="Integer" array="False" size=""/>
+            <declare name="lomba" type="Integer" array="False" size=""/>
+            <declare name="dosen" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan IPK: &quot;" newline="True"/>
+            <input variable="ipk"/>
+            <if expression="ipk &gt;= 3.5">
+                <then>
+                    <output expression="&quot;IPK anda memenuhi syarat, anda bisa mendaftar menjadi Presiden BEM&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;UKM yang anda ikuti:&quot;" newline="True"/>
+                    <input variable="ukm"/>
+                    <if expression="ukm &gt;= 2">
+                        <then>
+                            <output expression="&quot;Masukan Setifikat Perlombaan jika ada&quot;" newline="True"/>
+                            <input variable="lomba"/>
+                            <if expression="lomba != 0">
+                                <then>
+                                    <output expression="&quot;Berapa banyak dosen rekomendasikan? &quot;" newline="True"/>
+                                    <input variable="dosen"/>
+                                    <if expression="dosen &gt;= 3">
+                                        <then>
+                                            <output expression="&quot;Selamat anda terpilih menjadi President BEM&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Waduh.... sedikit lagi :(&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Maaf anda tidak memenuhi syarat&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;Maaf setidak nya mengikuti UKM minimal 2&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
